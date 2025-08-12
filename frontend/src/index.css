@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 79 70 229;
+    --color-primary-hover: 67 56 202;
+    --color-secondary: 139 92 246;
+    --color-success: 16 185 129;
+    --color-warning: 245 158 11;
+    --color-error: 239 68 68;
+    --color-text: 17 24 39;
+    --color-text-light: 75 85 99;
+    --color-bg: 249 250 251;
+    --color-card: 255 255 255;
+    --color-border: 229 231 235;
+  }
+
+  .dark {
+    --color-primary: 99 102 241;
+    --color-primary-hover: 79 70 229;
+    --color-secondary: 124 58 237;
+    --color-text: 243 244 246;
+    --color-text-light: 156 163 175;
+    --color-bg: 17 24 39;
+    --color-card: 31 41 55;
+    --color-border: 55 65 81;
+  }
+
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  body {
+    @apply min-h-full flex flex-col bg-bg text-text font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  #root {
+    @apply flex flex-col flex-1;
+  }
+
+  h1 {
+    @apply text-3xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-semibold;
+  }
+
+  .card {
+    @apply bg-card rounded-xl shadow-sm border border-border p-6;
+  }
+
+  .stat-card {
+    @apply card hover:shadow-md transition-shadow duration-200;
+  }
+
+  .camera-card {
+    @apply border border-border rounded-lg overflow-hidden hover:shadow-md transition-all bg-card;
+  }
+
+  .status-badge {
+    @apply absolute top-2 left-2 px-2 py-1 text-xs rounded bg-black bg-opacity-70 text-white;
+  }
+
+  .nav-button {
+    @apply p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors;
+  }
+
+  .alert-badge {
+    @apply absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-hover text-white font-medium rounded-lg px-4 py-2 shadow-sm hover:shadow-md transition-all;
+  }
+
+  .btn-icon {
+    @apply p-2 rounded-lg hover:bg-gray-100 transition-colors;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition;
+  }
+
+  .grid-cols-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
+  }
+}

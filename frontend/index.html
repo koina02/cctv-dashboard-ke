@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="h-full dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCTV Platform Login</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Google Font (Modern Look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Analytics Placeholder -->
+    <!-- Replace UA-XXXXX-Y with your tracking ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX-Y');
+    </script>
+
+    <!-- Tailwind Global Font -->
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="h-full bg-[#0f172a] text-white">
+    <noscript>
+      <strong>This site works better with JavaScript enabled. Please enable it in your browser.</strong>
+    </noscript>
+
+    <div id="root" class="flex h-full w-full items-center justify-center bg-cover bg-center"
+      style="background-image: url('https://source.unsplash.com/1600x900/?security,camera');">
+      <!-- React injects here -->
+    </div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
