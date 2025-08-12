@@ -1,6 +1,7 @@
 📹 CCTV Dashboard KE
 
 A centralized CCTV management platform designed for monitoring, controlling, and analyzing surveillance systems both within Kenya and globally. Built with compliance to Kenya’s Data Protection Act and international security standards, the platform enables real-time situational awareness, proactive threat detection, and streamlined surveillance operations.
+
 🌍 Scope & Jurisdiction
 
     Local (Kenya): Full compliance with Kenyan CCTV and data privacy regulations, integration with existing local enforcement and private sector systems.
